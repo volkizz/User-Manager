@@ -1,0 +1,17 @@
+CREATE TABLE `test`.`user`(
+  `id` INT(8) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(25) NOT NULL,
+  `age` INT NOT NULL,
+  `isAdmin` BIT(1) NOT NULL DEFAULT 0,
+  `createdDate` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+INSERT INTO `user` (`name`,`age`,`isAdmin`) VALUES ("Chris",17,0),("Lena",43,0),("Walle",110,1),("Zhenya",29,1),("Carmen",67,1),("Trevor",90,1),("Andy",24,1),("Bernard",10,1),("Triss",35,1),("Zoltan",45,1);
+INSERT INTO `user` (`name`,`age`,`isAdmin`) VALUES ("Sheila",37,1),("Bill",23,1),("Irina",27,0),("Dima",25,0),("Karen",43,1),("Mira",12,0),("Gregory",54,0),("Lida",119,0),("Yennefer",39,1),("Dudu",58,1);
+INSERT INTO `user` (`name`,`age`,`isAdmin`) VALUES ("Anton",45,0),("Igor",56,1),("Freddy",45,1),("Victor",50,0),("Tom",38,0),("Vienna",16,0),("Nicole",36,1),("Jolly",95,0),("Keira",52,0),("Ciri",27,0);
+INSERT INTO `user` (`name`,`age`,`isAdmin`) VALUES ("Emhyr",24,0),("Sergio",24,0),("Johnny",19,0),("Sem",34,0),("Daniel",42,0),("Mykola",25,1),("Will",45,0),("Letho",100,1),("Vesemir",119,0),("Radovid",42,1);
+INSERT INTO `user` (`name`,`age`,`isAdmin`) VALUES ("Ben",58,1),("Reggi",58,0),("William",65,1),("Joe",30,1),("Max",5,0),("Volt",22,0),("Keegan",5,1),("Raven",15,0),("Geralt",110,1),("Anna",46,0);
+
